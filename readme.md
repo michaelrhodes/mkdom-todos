@@ -2,10 +2,16 @@
 This is just a basic todo app that demonstrates how you can use mkdom to share rendering logic between the browser and the server.
 
 ## install
-`cd` into the example directory and run the following commands:
-
 ```sh
+# Install browserify globally.
 npm install -g browserify
+
+# Clone this repo or download the zip if you don’t use git.
+git clone git@github.com:michaelrhodes/mkdom-todos.git
+cd mkdom-tools
+
+# Install the project dependencies & run the server.
+npm install
 npm start
 ```
 
