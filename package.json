@@ -1,0 +1,26 @@
+{
+  "name": "todos",
+  "version": "0.0.0",
+  "description": "An example of using mkdom to share rendering logic with the browser.",
+  "main": "server/index.js",
+  "browser": "client/index.js",
+  "dependencies": {
+    "ecstatic": "~0.4.10",
+    "el": "~0.2.1",
+    "mkdom": "~0.0.3",
+    "nedb": "~0.8.9"
+  },
+  "devDependencies": {
+    "brfs": "~0.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify -t brfs client/index.js -o client/public/build.js && node server/index 8888"
+  },
+  "keywords": [
+    "mkdom",
+    "todo-list"
+  ],
+  "author": "Michael Rhodes",
+  "license": "MIT"
+}
