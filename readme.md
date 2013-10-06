@@ -8,7 +8,7 @@ npm install -g browserify
 
 # Clone this repo or download the zip if you don’t use git.
 git clone git@github.com:michaelrhodes/mkdom-todos.git
-cd mkdom-tools
+cd mkdom-todos
 
 # Install the project dependencies & run the server.
 npm install
