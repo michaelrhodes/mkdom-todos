@@ -2,9 +2,12 @@ var api = require('./models/api')
 var Add = require('./views/add')
 var List = require('./views/list')
 
+var header = document.querySelector('header')
 var rendered = document.querySelector('.todos')
 var list = new List(rendered)
 var add = new Add
+
+header.appendChild(add.button)
 
 list.on('remove', function(id) {
   api.removeItem(id)

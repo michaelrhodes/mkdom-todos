@@ -3,16 +3,14 @@ var events = require('../lib/as-evented')
 var click = ('ontouchstart' in document ? 'touchstart' : 'click')
 
 var Add = function() {
-  var header = document.querySelector('header')
-  var button = document.createElement('button')
+  this.button = document.createElement('button')
   
-  button.textContent = 'Add'
-  header.appendChild(button)
+  this.button.textContent = 'Add'
 
-  button.addEventListener(click, this.add.bind(this))
+  this.button.addEventListener(click, this.add.bind(this))
 
   if (click === 'touchstart') {
-    button.addEventListener('click', function(e) {
+    this.button.addEventListener('click', function(e) {
       e.preventDefault()
     })
   }
