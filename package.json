@@ -11,11 +11,12 @@
     "nedb": "~0.8.9"
   },
   "devDependencies": {
+    "browserify": "~2.34.0",
     "brfs": "~0.0.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browserify -t brfs client/index.js -o client/public/build.js && node server/index 8888"
+    "start": "./node_modules/.bin/browserify -t brfs client/index.js -o client/public/build.js && node server/index 8888"
   },
   "repository": {
     "type": "git",

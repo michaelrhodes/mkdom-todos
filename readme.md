@@ -3,16 +3,12 @@ This is just a basic todo app that demonstrates how you can use mkdom to share r
 
 ## install
 ```sh
-# Install browserify globally.
-npm install -g browserify
-
 # Clone this repo or download the zip if you don’t use git.
 git clone git@github.com:michaelrhodes/mkdom-todos.git
 cd mkdom-todos
 
 # Install the project dependencies & run the server.
-npm install
-npm start
+npm install && npm start
 ```
 
 The application should now be running at localhost:8888. Edit scripts.start in the example/package.json file if you need to run on a different port.
