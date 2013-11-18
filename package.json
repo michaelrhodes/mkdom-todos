@@ -1,6 +1,6 @@
 {
   "name": "todos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An example of using mkdom to share rendering logic with the browser.",
   "main": "server/index.js",
   "browser": "client/index.js",
@@ -15,8 +15,8 @@
     "brfs": "~0.0.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/browserify -t brfs client/index.js -o client/public/build.js && node server/index 8888"
+    "start": "npm run build && node server/index 8888",
+    "build": "browserify -t brfs client/index.js > client/public/build.js"
   },
   "repository": {
     "type": "git",
