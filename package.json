@@ -1,13 +1,13 @@
 {
   "name": "todos",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An example of using mkdom to share rendering logic with the browser.",
   "main": "server/index.js",
   "browser": "client/index.js",
   "dependencies": {
     "ecstatic": "~0.4.10",
     "el": "~0.2.1",
-    "mkdom": "~0.0.3",
+    "mkdom": "~0.1.4",
     "nedb": "~0.8.9"
   },
   "devDependencies": {
