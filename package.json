@@ -1,5 +1,6 @@
 {
   "name": "todos",
+  "private": true,
   "version": "0.0.3",
   "description": "An example of using mkdom to share rendering logic with the browser.",
   "main": "server/index.js",
