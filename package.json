@@ -6,7 +6,7 @@
   "main": "server/index.js",
   "browser": "client/index.js",
   "dependencies": {
-    "ecstatic": "~0.4.10",
+    "ecstatic": "~3.0.0",
     "el": "~0.2.1",
     "mkdom": "~0.1.4",
     "nedb": "~0.8.9"
